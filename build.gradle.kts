@@ -28,7 +28,7 @@ compose.desktop {
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "Notes"
+            packageName = "Assignment2"
             packageVersion = "1.0.0"
         }
     }
