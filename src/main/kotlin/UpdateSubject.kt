@@ -2,6 +2,6 @@ interface UpdateSubject {
     val observingObjects: MutableList<UpdateObserver>
 
     fun addObserver(observer: UpdateObserver)
-    fun notifyObservers()
+    fun notifyObservers(update: ShippingUpdate)
     fun removeObserver(observer: UpdateObserver)
 }

@@ -22,6 +22,7 @@ import androidx.compose.ui.window.application
 fun app() {
     var shipmentId by remember { mutableStateOf("") }
     val shipments = remember { mutableStateListOf<Shipment>(Shipment("id", "status", 123, "location"))}
+    val simulator = TrackingSimulator()
 
     MaterialTheme {
         Column {
@@ -33,7 +34,10 @@ fun app() {
                 shipmentId = it
             })
             Button(onClick = {
-                print("New shipment: $shipmentId")
+                val newShipment = simulator.findShipment(shipmentId)
+                if (newShipment != null) {
+                    shipments.add(newShipment)
+                }
             }) {
                 Text("Add Shipment")
             }}
