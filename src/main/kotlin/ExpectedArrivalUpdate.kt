@@ -8,6 +8,6 @@ class ExpectedArrivalUpdate (
         }
 
         override fun displayUpdate(): String {
-            return "Location updated from $previousValue to $newValue at $timestamp."
+            return "Expected arrival time updated from $previousValue to $newValue at $timestamp."
         }
 }

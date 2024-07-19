@@ -1,19 +1,19 @@
 class Shipment(
-    val id: String,
+    private val id: String,
     private var status: String,
     private var expectedArrival: Long,
     private var location: String,
-    private val notes: MutableList<String>,
-    private val updateHistory: MutableList<ShippingUpdate>
+    private val notes: MutableList<String> = mutableListOf(),
+    private val updateHistory: MutableList<ShippingUpdate> = mutableListOf()
 ) {
     fun addUpdate(update: ShippingUpdate) {
         update.updateShipment(this)
         updateHistory.add(update)
     }
 
-//    fun getId(): String {
-//        return id
-//    }
+    fun getId(): String {
+        return id
+    }
 
     fun getStatus(): String {
         return status

@@ -19,29 +19,34 @@ import androidx.compose.ui.window.application
 
 @Composable
 @Preview
-fun App() {
+fun app() {
     var shipmentId by remember { mutableStateOf("") }
-    val shipments = remember { mutableStateListOf<Shipment>()}
+    val shipments = remember { mutableStateListOf<Shipment>(Shipment("id", "status", 123, "location"))}
 
     MaterialTheme {
-        Column{
+        Column {
+            Column(
+                modifier = Modifier
+                    .padding(8.dp)
+            ) {
             TextField(shipmentId, onValueChange = {
                 shipmentId = it
             })
             Button(onClick = {
-                print("New shipment: ${shipmentId}")
+                print("New shipment: $shipmentId")
             }) {
                 Text("Add Shipment")
-            }
+            }}
             LazyColumn {
-                items(shipments, key = {it.id}) {
-                    Row(
+                items(shipments, key = {it.getId()}) {
+                    Column(
                         modifier = Modifier
                             .padding(8.dp)
                             .border(1.dp, Color.Black, RoundedCornerShape(4.dp))
                             .padding(4.dp)
-                    ){
-                        Text("shipment here")
+                    ) {
+                        Text("Shipment ${it.getId()} - most recent status: ${it.getStatus()}")
+                        Text("Most recent location: ${it.getLocation()}")
                     }
                 }
             }
@@ -51,6 +56,6 @@ fun App() {
 
 fun main() = application {
     Window(onCloseRequest = ::exitApplication) {
-        App()
+        app()
     }
 }

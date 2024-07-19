@@ -5,26 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52419202-4ece-44ab-94af-c918f1c4da27" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ExpectedArrivalUpdate.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/LocationUpdate.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/NotesUpdate.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ShippingUpdate.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/StatusUpdate.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/TrackerViewHelper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/TrackingSimulator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/UpdateObserver.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/UpdateSubject.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/ShipmentUpdateTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Note.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ExpectedArrivalUpdate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ExpectedArrivalUpdate.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/NotesUpdate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/NotesUpdate.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Shipment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Shipment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/StatusUpdate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/StatusUpdate.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/ShipmentUpdateTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ShippingUpdateTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +71,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Gradle.desktop.executor": "Debug",
+    "Gradle.ShippingUpdateTest.executor": "Run",
+    "Gradle.desktop.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
@@ -99,7 +88,31 @@
     ]
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.desktop">
+    <configuration name="ShippingUpdateTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ShippingUpdateTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Notes.main" />
       <method v="2">
@@ -113,6 +126,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.ShippingUpdateTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

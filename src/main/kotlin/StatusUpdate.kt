@@ -7,6 +7,6 @@ class StatusUpdate(
         shipment.setStatus(newValue)
     }
     override fun displayUpdate(): String {
-        return "Status updated from $previousValue to $newValue at $timestamp"
+        return "Status updated from $previousValue to $newValue at $timestamp."
     }
 }
